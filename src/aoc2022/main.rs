@@ -1,11 +1,9 @@
 use advent_of_code::days;
 
-days!(1, 2);
+days!(1, 2, 3);
 
 fn main() {
-    if let Some(day) = std::env::args().nth(1) {
-        run_day(&day);
-    } else {
-        run_all();
-    }
+    std::env::args()
+        .nth(1)
+        .map_or_else(run_all, |day| run_day(&day));
 }

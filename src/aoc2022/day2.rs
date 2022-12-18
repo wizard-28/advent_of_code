@@ -44,7 +44,6 @@ fn parse(strategy_guide: &str) -> Vec<(Choice, MyOption)> {
 fn part1(strategy_guide: &[(Choice, MyOption)]) -> u32 {
     let mut score = 0;
     for round in strategy_guide {
-        // Decode my option
         let my_choice = match round.1 {
             MyOption::X => Choice::Rock,
             MyOption::Y => Choice::Paper,
@@ -77,7 +76,6 @@ fn part1(strategy_guide: &[(Choice, MyOption)]) -> u32 {
 fn part2(strategy_guide: &[(Choice, MyOption)]) -> u32 {
     let mut score = 0;
     for round in strategy_guide {
-        // Decode my option
         let my_choice = match round.1 {
             // I need to lose
             MyOption::X => match round.0 {
