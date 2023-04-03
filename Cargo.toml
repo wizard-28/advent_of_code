@@ -17,3 +17,6 @@ paste = "1"
 strip = true
 lto = true
 panic = 'abort'
+
+[dev-dependencies]
+rstest = "0.17.0"
