@@ -1,6 +1,6 @@
 use advent_of_code::days;
 
-days!(1, 2, 3, 4, 5, 6);
+days!(1, 2, 3, 4, 5, 6, 7);
 
 fn main() {
     std::env::args()
